@@ -1,13 +1,13 @@
 
 public class Student implements Comparable<Student>{
 
-    public String name; //이름
-    public String no;	//학번(중복불가)
-    public int kor; //국어점수
-    public int eng; //영어점수
-    public int math; //수학점수
-    public int sum; //국영수 합계
-    public double avg; //국영수 평균
+    private String name; //이름
+    private String no;	//학번(중복불가)
+    private int kor; //국어점수
+    private int eng; //영어점수
+    private int math; //수학점수
+    private int sum; //국영수 합계
+    private double avg; //국영수 평균
 
 
     public Student(String name, String no, int kor, int eng, int math) {
@@ -43,7 +43,8 @@ public class Student implements Comparable<Student>{
     //equals오버라이딩
     @Override
     public String toString() {
-        return "[이름=" + name + ", 학번=" + no + ", 국어점수=" + kor  + "점"+ ", 영어점수=" + eng+ "점" + ", 수학점수=" + math + "점"+ ", 총점=" + stuSum() + "점" + ", 평균점수=" + stuAvg() + "점]";
+        return "[이름=" + name + ", 학번=" + no + ", 국어점수=" + kor  + "점"+ ", 영어점수=" + eng+ "점" + ", " +
+                "수학점수=" + math + "점"+ ", 총점=" + stuSum() + "점" + ", 평균점수=" + stuAvg() + "점]";
     }
 
     //compareTo 구현 (총점 내림차순)
@@ -51,3 +52,6 @@ public class Student implements Comparable<Student>{
         return Integer.compare(student.stuSum(),this.stuSum()) ;
     }
 }
+
+
+

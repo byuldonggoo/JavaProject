@@ -26,3 +26,5 @@ public class Delete { //학생정보 삭제
         }else System.out.println("다시 입력해주세요.");
     }
 }
+
+

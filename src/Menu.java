@@ -2,6 +2,10 @@
 public class Menu {
     public Menu() {}
 
+    public void loginPrint(){
+        System.out.println("===");
+    }
+
     public void menuPrint(){ //초기메뉴
         System.out.println("======메뉴=======");
         System.out.println("1.학생성적입력");
@@ -14,4 +18,6 @@ public class Menu {
         System.out.println("8.프로그램 종료");
         System.out.println("================");
     }
+
+
 }

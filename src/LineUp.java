@@ -8,3 +8,5 @@ public class LineUp { //총점 내림차순으로 정렬
         stream.sorted().forEach(System.out::println);
     }
 }
+
+

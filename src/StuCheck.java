@@ -17,3 +17,4 @@ public class StuCheck {//특정학생조회
 
     }
 }
+

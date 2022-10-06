@@ -10,3 +10,5 @@ public class EveryList { //전체학생출력
         stream.forEach(System.out::println);
     }
 }
+
+
